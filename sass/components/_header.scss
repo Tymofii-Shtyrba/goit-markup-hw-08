@@ -1,0 +1,9 @@
+.header {
+    border-bottom: solid 1px var(--underline-color);
+    &__container {
+        margin: 0px auto;
+        width: 1200px;
+        padding: 0px 15px;
+        display: flex;
+    }
+}
