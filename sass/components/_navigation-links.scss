@@ -2,7 +2,12 @@
     display: flex;
     margin-right: auto;
     align-items: center;
-    
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+
     &__logo {
         color: var(--first-logo-color);
         font-family: 'Raleway', sans-serif;
@@ -12,11 +17,25 @@
         letter-spacing: 0.03em;
         margin-right: 93px;
         padding: 24px 0px 25px 0px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 24px;
+            line-height: 1.16;
+            padding: 16px 0px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            padding: 26px 0px;
+        }
     }
 
     &__list {
         gap: 50px;
-        display: flex;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
 
     &__link {
@@ -31,10 +50,20 @@
     }
 }
 
+.menu-button {
+    display: flex;
+    background-color: transparent;
+    border-color: transparent;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
 .main-nav__logo {
     &--black {
         color: var(--second-logo-color);
-    }    
+    }
 }
 
 .main-nav__link {

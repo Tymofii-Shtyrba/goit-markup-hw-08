@@ -1,3 +1,9 @@
+.mailing-form {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin: 0px 150px;
+    }
+}
+
 .mailing-form__title {
     display: block;
     font-weight: 700;
@@ -7,11 +13,21 @@
     text-transform: uppercase;
     color: var(--main-color);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
 }
 
 .mailing-form__field-wrapper {
     position: relative;
     display: flex;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 .mailing-form__field {
@@ -23,6 +39,12 @@
     outline: transparent;
     margin-right: 12px;
     color: var(--main-color);
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 450px;
+        margin-right: 0px;
+    }
 }
 
 .mailing-field::placeholder {

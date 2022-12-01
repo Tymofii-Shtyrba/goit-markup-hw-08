@@ -1,15 +1,29 @@
 .features {
-    padding: 94px 0px;
+    padding: 60px 0px;    
+
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+    }
 
     &__container {
-        margin: 0px auto;
-        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 0px 15px;
+        width: fit-content;
     }
 
     &__list {
-        display: flex;
-        gap: 30px;
+        @media screen and (min-width: 768px) {
+            width: 738px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            
+        }
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+            width: 1200px;
+        }
     }
 }
 
@@ -18,10 +32,18 @@
 }
 
 .feature {
-    width: 270px;
+    width: auto;
+    max-width: 450px;
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1200px) { 
+        width: 270px;
+    }
 
     &__icon-container {
-        width: 270px;
         height: 120px;
         background-color: var(--team-section-color);
         display: flex;
@@ -44,6 +66,11 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            
+        }
     }
 
     &__descr {

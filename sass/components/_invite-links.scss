@@ -1,5 +1,16 @@
 .invite-container {
-    margin-right: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-right: 93px;
+    }
 
     &__title {
         font-weight: 700;

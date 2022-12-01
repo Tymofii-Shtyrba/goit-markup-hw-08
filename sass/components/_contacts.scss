@@ -1,7 +1,18 @@
 .contacts-list {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        flex-direction: column;
+        gap: 10px;
+        padding: 21px 0px;
+        align-items: flex-start;
+    }
 
     &__icon {
         fill: currentColor;
@@ -20,11 +31,15 @@
     transition: color 250ms var(--transition-function);
     gap: 10px;
 
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        padding: 0px;
+    }
+
     &:hover {
         color: var(--first-logo-color);
     }
 
-    &:focus{
+    &:focus {
         color: var(--first-logo-color);
     }
 }
