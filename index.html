@@ -109,27 +109,38 @@
                 <h2 class="activities__title">Чим ми займаємося</h2>
                 <ul class="activities__list">
                     <li class="activity">
-                        <img src="./images/box1.jpg" alt="development" width="370" height="294">
+                        <img srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x" src="./images/box1.jpg" alt="development" width="370" height="294">
                         <p class="activity__descr">Десктопні додатки</p>
                     </li>
                     <li class="activity">
-                        <img src="./images/box2.jpg" alt="optimization" width="370" height="294">
+                        <img srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x" src="./images/box2.jpg" alt="optimization" width="370" height="294">
                         <p class="activity__descr">Мобільні додатки</p>
                     </li>
                     <li class="activity">
-                        <img src="./images/box3.jpg" alt="design" width="370" height="294">
+                        <img srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x" src="./images/box3.jpg" alt="design" width="370" height="294">
                         <p class="activity__descr">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>
         </section>
         <!-- Team_section -->
-        <!-- <section class="team-section">
+        <section class="team-section">
             <div class="team-section__container">
                 <h2 class="team-section__title">Наша команда</h2>
                 <ul class="team-section__workers-list"> 
                     <li class="employee">
-                        <img class="employee__photo" src="./images/team_card1.jpg" alt="Ihor Demyanenko">
+                        <img class="employee__photo" srcset="
+                        ./images/mobile/team_card1.jpg 450w,
+                        ./images/tablet/team_card1.jpg 354w, 
+                        ./images/team_card1.jpg 270w, 
+                        ./images/mobile/team_card1@2x.jpg 900w, 
+                        ./images/tablet/team_card1@2x.jpg 708w, 
+                        ./images/team_card1@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw" 
+                        src="./images/mobile/team_card1.jpg" 
+                        alt="Ihor Demyanenko">
                         <div class="employee__description">
                             <h3 class="employee__title">Ігор Дем'яненко</h3>
                             <p class="employee__position">Product Designer</p>
@@ -166,7 +177,18 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img class="employee__photo" src="./images/team_card2.jpg" alt="Ольга Рєпіна">
+                        <img class="employee__photo" srcset="
+                        ./images/mobile/team_card2.jpg 450w, 
+                        ./images/tablet/team_card2.jpg 354w, 
+                        ./images/team_card2.jpg 270w,
+                        ./images/mobile/team_card2@2x.jpg 900w, 
+                        ./images/tablet/team_card2@2x.jpg 708w, 
+                        ./images/team_card2@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px,
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw" 
+                        src="./images/mobile/team_card2.jpg" 
+                        alt="Ольга Рєпіна">
                         <div class="employee__description">
                         <h3 class="employee__title">Ольга Рєпіна</h3>
                             <p class="employee__position">Frontend Developer</p>
@@ -203,7 +225,18 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img class="employee__photo" src="./images/team_card3.jpg" alt="Микола Тарасов">
+                        <img class="employee__photo" srcset="
+                        ./images/mobile/team_card3.jpg 450w, 
+                        ./images/tablet/team_card3.jpg 354w, 
+                        ./images/team_card3.jpg 270w,
+                        ./images/mobile/team_card3@2x.jpg 900w, 
+                        ./images/tablet/team_card3@2x.jpg 708w, 
+                        ./images/team_card3@2x.jpg 540w" 
+                        sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw" 
+                        src="./images/mobile/team_card3.jpg" 
+                        alt="Микола Тарасов">
                         <div class="employee__description">
                             <h3 class="employee__title">Микола Тарасов</h3>
                             <p class="employee__position">Marketing</p>
@@ -240,7 +273,18 @@
                         </div>                       
                     </li>
                     <li class="employee">
-                        <img class="employee__photo" src="./images/team_card4.jpg" alt="Mykhailo Yermakov">
+                        <img class="employee__photo" srcset="
+                        ./images/mobile/team_card4.jpg 450w, 
+                        ./images/tablet/team_card4.jpg 354w, 
+                        ./images/team_card4.jpg 270w, 
+                        ./images/mobile/team_card4@2x.jpg 900w, 
+                        ./images/tablet/team_card4@2x.jpg 708w, 
+                        ./images/team_card4@2x.jpg 540w"
+                        sizes="(min-width: 1200px) 270px, 
+                        (min-width: 768px) 354px, 
+                        (min-width: 480px) 450px, 100vw" 
+                        src="./images/mobile/team_card4.jpg" 
+                        alt="Mykhailo Yermakov">
                         <div class="employee__description">
                             <h3 class="employee__title">Михайло Єрмаков</h3>
                             <p class="employee__position">UI Designer</p>
@@ -278,7 +322,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- Clients_section -->
         <section class="clients">
             <div class="clients__container">
@@ -457,9 +501,9 @@
             </svg>
         </button>
         <ul class="mobile-menu">
-            <li><a href="" class="mobile-menu__link--current">About</a></li>
-            <li><a href="" class="mobile-menu__link">Products</a></li>
-            <li><a href="" class="mobile-menu__link">Contacts</a></li>
+            <li><a href="" class="mobile-menu__link--current">Студія</a></li>
+            <li><a href="" class="mobile-menu__link">Портфоліо</a></li>
+            <li><a href="" class="mobile-menu__link">Контакти</a></li>
         </ul>
         <ul>
             <li><a class="mobile-menu__tel" href="">+38 096 111 11 11</a></li>

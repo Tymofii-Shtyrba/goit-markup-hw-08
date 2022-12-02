@@ -41,7 +41,7 @@
     display: block;
     padding: 11px 16px;
     resize: none;
-    width: 448px;
+    width: 100%;
     height: 120px;
 
 }
@@ -100,11 +100,18 @@
 
 .form_checkbox-descr {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--descriprion-color);
     user-select: none;
+    
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.7;
+        
+    }
 }
 
 .form_terms-link {
