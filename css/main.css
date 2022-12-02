@@ -256,29 +256,47 @@ ul {
   background-color: var(--face-background);
   color: var(--main-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/header-img.jpg);
-  background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/header-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/mobile/header-img.jpg);
+  background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/mobile/header-img.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/mobile/header-img@2x.jpg);
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/mobile/header-img@2x.jpg);
+  }
 }
 .hero__container {
   margin: 0px auto;
-  width: 1200px;
-  padding: 200px 15px;
+  max-width: 1200px;
+  padding: 118px 15px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    padding: 200px 15px;
+  }
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 700px;
   margin: 0px auto 30px;
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 700px;
+  }
 }
 
 .order-button {
