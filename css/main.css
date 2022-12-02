@@ -271,6 +271,30 @@ ul {
     background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/mobile/header-img@2x.jpg);
   }
 }
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/tablet/header-img.jpg);
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/tablet/header-img.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/tablet/header-img@2x.jpg);
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/tablet/header-img@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/header-img.jpg);
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/header-img.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url(../images/header-img@2x.jpg);
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url(../images/header-img@2x.jpg);
+  }
+}
 .hero__container {
   margin: 0px auto;
   max-width: 1200px;
@@ -310,7 +334,7 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  padding: 8px 30px;
+  padding: 8px 22px;
   -webkit-transition: background 250ms var(--transition-function), -webkit-box-shadow 250ms var(--transition-function);
   transition: background 250ms var(--transition-function), -webkit-box-shadow 250ms var(--transition-function);
   transition: background 250ms var(--transition-function), box-shadow 250ms var(--transition-function);
@@ -325,6 +349,11 @@ ul {
   background: var(--button-active-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .order-button {
+    padding: 8px 30px;
+  }
 }
 
 .features {
