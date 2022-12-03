@@ -34,13 +34,21 @@
 .feature {
     width: auto;
     max-width: 450px;
-    margin-bottom: 30px;
+
+    &:not(:last-child) {
+
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+            
+        }
+    }
+
     @media screen and (min-width: 768px) {
         max-width: 354px;
         margin-bottom: 0px;
     }
     @media screen and (min-width: 1200px) { 
-        width: 270px;
+        flex-basis: calc(100%/4);
     }
 
     &__icon-container {

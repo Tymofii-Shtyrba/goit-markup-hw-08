@@ -1,13 +1,17 @@
 .main-nav {
     display: flex;
-    margin-right: auto;
     align-items: center;
-
+        
     @media screen and (max-width: 767px) {
+        flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
     }
-
+    @media screen and (min-width: 1200px) {
+        margin-right: auto;
+        
+    }
+    
     &__logo {
         color: var(--first-logo-color);
         font-family: 'Raleway', sans-serif;
@@ -15,9 +19,12 @@
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
-        margin-right: 93px;
         padding: 24px 0px 25px 0px;
 
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+        }
+        
         @media screen and (max-width: 1200px) {
             font-size: 24px;
             line-height: 1.16;

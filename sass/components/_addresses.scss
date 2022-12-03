@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1200px) {
         margin-right: 165px;
     }
@@ -46,7 +50,6 @@
         @media screen and (max-width: 1200px) {
             align-items: center;
             gap: 8px;
-            margin-bottom: 60px;
         }
     }
 }
